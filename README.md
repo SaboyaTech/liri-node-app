@@ -1,6 +1,6 @@
 # Terminal Liri Node App:
 
-<img src='./poster.png' width='500'> <br>  
+<img src='https://raw.githubusercontent.com/SaboyaDev/liri-node-app/master/poster.png' width='500'> <br>  
 LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a command line node app that takes in parameters and gives you back Music Information, Performance of a Stock Ticket Symbol, Information on your favorite movie or be able to read from a file.
 
 I have created a .env.example file, remane it to .env and place your API keys in it.
