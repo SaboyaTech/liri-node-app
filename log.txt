@@ -1,0 +1,39 @@
+
+-------------------------------- SEARCH RESULT --------------------------------
+
+Artist: Fetty Wap
+Song Title: Trap Queen
+Preview URL: https://p.scdn.co/mp3-preview/62bf932cdc4d351174128d974397f5093de4f994?cid=29a3e588a3d044299c7de149b8482f6f
+Album: Fetty Wap (Deluxe)
+
+-----------------------------------------------------------------------------
+
+
+-------------------------------- MOVIE SEARCH RESULT --------------------------------
+
+Movie Title: "Back to the Future"
+Year Released: 1985
+IMDB Rating: 8.5 out of 10
+Rotten Tomatoes Rating: 96%
+Made In: United States
+Language: English
+Plot: "Marty McFly, a 17-year-old high school student, is accidentally sent thirty years into the past in a time-traveling DeLorean invented by his close friend, the eccentric scientist Doc Brown."
+Actors: Michael J. Fox, Christopher Lloyd, Lea Thompson
+
+-----------------------------------------------------------------------------
+
+
+--------------------------- Today's Market Summary ---------------------------
+
+Daily Prices (open, high, low, close) and Volumes
+
+Date     : 2021-12-16
+Time Zone: US/Eastern
+Symbol   : TSLA
+Open     : $ 994.50
+High     : $ 994.98
+Low      : $ 921.85
+Close    : $ 926.92
+
+-----------------------------------------------------------------------------
+
