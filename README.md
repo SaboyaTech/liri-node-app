@@ -1,106 +1,115 @@
 # Terminal Liri Node App:
 
-* LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, 
+LIRI is like iPhone's SIRI, however, while SIRI is a Speech Interpretation and Recognition Interface, LIRI will be a command line node app that takes in parameters and gives you back data.
 
-* LIRI will be a command line node app that takes in parameters and gives you back data.
+I have created a .env.example file, remane it to .env and place your API keys in it.
 
-## Goals:
+### Goals:
 
-* To search Spotify for any song, OMDB for movies, and the Stock Market.
+- To search Spotify for any song, OMDB for movies, and the Stock Market.
+- To be retireve the data from the Data Bases, and to display the results on to the terminal.
+- liri.js can take one of this commands
+- **<em>spotify_this_song</em>**
+- **<em>movie_this</em>**
+- **<em>check_the_market</em>**
+- **<em>do_what_it_says</em>**
 
-* To be retireve the data from the Data Bases, and to display the results on to the terminal.
+### Required:
 
-* liri.js can take one of this commands 
+- Spotify API-Key
+- OMDB API-Key
+- Alpha Vantange API-Key
 
-  * spotify_this_song
+### Tools:
 
-  * movie_this
+| Module           | Purpose                                                          |
+| ---------------- | ---------------------------------------------------------------- |
+| Axious           | To grab data from the OMDB API                                   |
+| DotEnv           | Loads environment variables from .env file.                      |
+| Node-Spotify-API | Allows to get access to the Spotify Database with Authentication |
 
-  * check_the_market
+### Set-Up:
 
-  * do_what_it_says
+```
+liri-node-app$ npm install
 
-## Tools:
+liri-node-app$ mv .env.example/ .env/   // This will rename the Directory
+```
 
-  ```
-    * Axious           - To grab data from the OMDB API
-    * DotEnv           - Improves the security of our program for API Keys and Tokens by creating .env
-    * Node-Spotify-API - Allows to get access to the Spotify Database with Authentication
+### Commands:
 
-  ```
+- **spotify_this_song:** &nbsp; :arrow_right: &nbsp; `node liri.js spotify_this_song '<song search here>'`  
+  <br>
 
-## What Each Command Does:
+  **Output:**
 
-### 1. spotify_this_song:
+        * Artist(s)
+        * Name of the song
+        * A preview link of the song from Spotify
+        * Name of Album
 
-* `node liri.js spotify_this_song '<song search here>'`
+  <em>If no song is provided then your program will default to "The Sign" by Ace of Base.</em>
+  <br>
 
-  * This will show the following information about the song in your terminal/bash window
+  ![github](https://raw.githubusercontent.com/SaboyaDev/liri-node-app/master/GIFs/spotify-this-song-default-val.gif)
 
-    * Artist(s)
+  ![github](https://raw.githubusercontent.com/SaboyaDev/liri-node-app/master/GIFs/spotify-this-song-any-song.gif)
 
-    * The song's name
+---
 
-    * A preview link of the song from Spotify
+2.  **movie_this:** &nbsp; :arrow_right: &nbsp; `node liri.js movie_this '<movie title here>'`
+    <br>
 
-    * The album that the song is from
+    **Output:**
 
-  * If no song is provided then your program will default to "The Sign" by Ace of Base.
+          * Title of the movie.
+          * Year the movie came out.
+          * IMDB Rating of the movie.
+          * Rotten Tomatoes Rating of the movie.
+          * Country where the movie was produced.
+          * Language of the movie.
+          * Plot of the movie.
+          * Actors in the movie.
 
-  ![github](https://github.com/joseluissaboya/liri-node-app/blob/master/GIFs/spotify-this-song-default-val.gif)
+      <br>
 
-  ![github](https://github.com/joseluissaboya/liri-node-app/blob/master/GIFs/spotify-this-song-any-song.gif)
-- - -
-### 2. movie_this: 
+    ![github](https://raw.githubusercontent.com/SaboyaDev/liri-node-app/master/GIFs/movie-this-default-value.gif)
 
-* `node liri.js movie_this '<movie title here>'`
+    ![github](https://raw.githubusercontent.com/joseluissaboya/liri-node-app/master/GIFs/movie-this-any-movie.gif)
 
-  * requires the user to input a title of a movie
+---
 
-  * This will output the following information to your terminal/bash window:
+3.  **check_the_market:** &nbsp; :arrow_right: &nbsp; `node liri.js check_the_market '<stock symbol>'`
+    <br>
 
-    ```
-      * Title of the movie.
-      * Year the movie came out.
-      * IMDB Rating of the movie.
-      * Rotten Tomatoes Rating of the movie.
-      * Country where the movie was produced.
-      * Language of the movie.
-      * Plot of the movie.
-      * Actors in the movie.
+    This will connect with the Alpha Vantage API which will provide us with the daily performance of any stock and display the following results:
 
-    ```
-
-![github](https://github.com/joseluissaboya/liri-node-app/blob/master/GIFs/movie-this-default-value.gif)
-
-![github](https://github.com/joseluissaboya/liri-node-app/blob/master/GIFs/movie-this-any-movie.gif)
-- - -
-### 3. check_the_market:
-
-* `node liri.js check_the_market '<stock symbol>'`
-
-  * This will connect with the Alpha Vantage API which will provide us with the daily performance of any stock and display the following results:
-
+      <br>
+      
+      **Output:**
       ```
-      * Time Zone
-      * The Symbol
-      * The Opening Price
-      * The closing Price
-      * The High of the Day
-      * The Low of the Day
-      * The Closing  Price
+        * Time Zone
+        * The Symbol
+        * The Opening Price
+        * The closing Price
+        * The High of the Day
+        * The Low of the Day
+        * The Closing Price
+      ```
 
-    ```
+    ![github](https://raw.githubusercontent.com/joseluissaboya/liri-node-app/master/GIFs/check-the-market.gif)
 
-  ![github](https://github.com/joseluissaboya/liri-node-app/blob/master/GIFs/check-the-market.gif)
-- - -
-### 4. do_what_it_says:
+---
 
-* `node liri.js do_what_it_says`
+4. **do_what_it_says:** &nbsp; :arrow_right: &nbsp; `node liri.js do_what_it_says`
+   <br >
 
-  * * Using the `fs` Node package, LIRI will take the text inside of random.txt and then use it to call one of LIRI's commands.
+- Using the `fs` Node package, LIRI will take the text inside of random.txt and then use it to call one of LIRI's commands.
 
-     * It should run `spotify-this-song` for "I Want it That Way," as follows the text in `random.txt`.
+- It should run `spotify-this-song` for "I Want it That Way," as follows the text in `random.txt`.
+  <br>
+  ![github](https://raw.githubusercontent.com/joseluissaboya/liri-node-app/master/GIFs/read-file-do-task.gif)
 
-  ![github](https://github.com/joseluissaboya/liri-node-app/blob/master/GIFs/read-file-do-task.gif)
-  - - -
+---
+
+SaboyaDev
