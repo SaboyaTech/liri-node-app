@@ -1,6 +1,6 @@
 # Terminal Liri Node App:
 
-LIRI is like iPhone's SIRI, however, while SIRI is a Speech Interpretation and Recognition Interface, LIRI will be a command line node app that takes in parameters and gives you back data.
+LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and Recognition Interface, LIRI is a command line node app that takes in parameters and gives you back Music Information, Performance of a Stock Ticket Symbol, Information on your favorite movie or be able to read from a file.
 
 I have created a .env.example file, remane it to .env and place your API keys in it.
 
